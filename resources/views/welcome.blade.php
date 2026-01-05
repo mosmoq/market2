@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>متجر النخبة | سوق المعدات الطبية</title>
+
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=alexandria:300,400,500,600,700,800&display=swap" rel="stylesheet" />
         <style>
@@ -249,12 +251,16 @@
                     <div class="logo">ن</div>
                     <div>
                         متجر النخبة
+
                         <div style="color: var(--muted); font-size: 0.85rem;">سوق المعدات الطبية</div>
+
                     </div>
                 </div>
                 <div class="nav-links">
                     <a href="#features">المزايا</a>
+
                     <a href="#collections">التخصصات</a>
+
                     <a href="#contact">تواصل معنا</a>
                     <a class="cta-primary" href="{{ url('/home') }}">ابدأ التسوق</a>
                 </div>
@@ -262,11 +268,13 @@
 
             <section class="hero">
                 <div class="hero-content">
+
                     <span class="hero-tag">تجربة شراء احترافية للمعدات الطبية</span>
                     <h1 class="hero-title">اكتشف أحدث <span>المعدات الطبية</span> والحلول الصحية للعيادات والمستشفيات.</h1>
                     <p class="hero-text">
                         نوفر أجهزة طبية معتمدة، مستلزمات عالية الجودة، وخدمات تجهيز متكاملة للقطاع الطبي. كل ذلك بتجربة
                         شراء ذكية، استشارات متخصصة، وتوصيل سريع ومضمون.
+
                     </p>
                     <div class="hero-actions">
                         <a class="cta-primary" href="{{ route('login') }}">سجّل الدخول الآن</a>
@@ -274,6 +282,7 @@
                     </div>
                     <div class="stats">
                         <div class="stat">
+
                             <strong>+850</strong>
                             جهاز ومستلزم
                         </div>
@@ -284,12 +293,14 @@
                         <div class="stat">
                             <strong>100%</strong>
                             ضمان الجودة
+
                         </div>
                     </div>
                 </div>
 
                 <div class="hero-cards">
                     <div class="card">
+
                         <div class="card-title">حلول تجهيز العيادات</div>
                         <p class="card-text">
                             باقات متكاملة تشمل الأجهزة التشخيصية، أجهزة قياس العلامات الحيوية، وكامل احتياجات العيادة.
@@ -305,6 +316,7 @@
                         <div class="card-title">مستلزمات يومية</div>
                         <p class="card-text">
                             مستهلكات طبية، أدوات تعقيم، وملحقات عالية الاعتمادية لتشغيل يومي دون توقف.
+
                         </p>
                     </div>
                 </div>
@@ -312,6 +324,7 @@
 
             <section id="features" class="showcase">
                 <div class="showcase-item">
+
                     <h4>اعتماد وجودة</h4>
                     <p class="card-text">منتجات مطابقة للمعايير الطبية مع شهادات جودة موثوقة.</p>
                 </div>
@@ -322,11 +335,13 @@
                 <div class="showcase-item">
                     <h4>خدمة ما بعد البيع</h4>
                     <p class="card-text">فريق صيانة وتدريب لضمان التشغيل السلس للمعدات.</p>
+
                 </div>
             </section>
 
             <section id="collections" class="showcase">
                 <div class="showcase-item">
+
                     <h4>الأجهزة التشخيصية</h4>
                     <p class="card-text">أجهزة أشعة، سونار، ومناظير بدقة عالية لتشخيص أسرع.</p>
                 </div>
@@ -337,12 +352,15 @@
                 <div class="showcase-item">
                     <h4>مستلزمات طبية</h4>
                     <p class="card-text">قفازات، كمامات، مستهلكات تعقيم، ومواد تشغيل يومية.</p>
+
                 </div>
             </section>
 
             <section id="contact" class="card">
                 <div class="card-title">تواصل معنا</div>
+
                 <p class="card-text">تحتاج استشارة لتجهيز مركزك الطبي؟ فريقنا جاهز لخدمتك.</p>
+
                 <div class="hero-actions">
                     <a class="cta-primary" href="mailto:info@market.com">info@market.com</a>
                     <a class="cta-secondary" href="tel:+962700000000">+962 7 0000 0000</a>
@@ -350,7 +368,9 @@
             </section>
 
             <footer class="footer">
+
                 © 2024 متجر النخبة — سوق المعدات الطبية المعتمدة.
+
             </footer>
         </div>
     </body>
