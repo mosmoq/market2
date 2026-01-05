@@ -287,6 +287,16 @@
                         </div>
                     </div>
                 </div>
+                <div class="nav-links">
+                    <a href="#features">المزايا</a>
+
+                    <a href="#collections">التخصصات</a>
+
+                    <a href="#contact">تواصل معنا</a>
+                    <a class="cta-primary" href="{{ url('/home') }}">ابدأ التسوق</a>
+                </div>
+           </nav>
+
 
                 <div class="hero-cards">
                     <div class="card">
