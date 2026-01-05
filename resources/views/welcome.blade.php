@@ -3,6 +3,31 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>متجر النخبة | سوق المعدات الطبية</title>
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=alexandria:300,400,500,600,700,800&display=swap" rel="stylesheet" />
+        <style>
+            :root {
+                --bg: #0b0f1a;
+                --surface: #111827;
+                --surface-2: #0f172a;
+                --accent: #22d3ee;
+                --accent-2: #a855f7;
+                --gold: #f59e0b;
+                --text: #f8fafc;
+                --muted: #cbd5f5;
+                --glass: rgba(255, 255, 255, 0.08);
+                --border: rgba(148, 163, 184, 0.3);
+                font-family: "Alexandria", system-ui, -apple-system, sans-serif;
+            }
+
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
 
         <title>متجر النخبة | سوق المعدات الطبية</title>
 
@@ -28,6 +53,7 @@
                 margin: 0;
                 padding: 0;
             }
+
 
             body {
                 min-height: 100vh;
@@ -251,7 +277,6 @@
                     <div class="logo">ن</div>
                     <div>
                         متجر النخبة
-
                         <div style="color: var(--muted); font-size: 0.85rem;">سوق المعدات الطبية</div>
 
                     </div>
@@ -264,17 +289,16 @@
                     <a href="#contact">تواصل معنا</a>
                     <a class="cta-primary" href="{{ url('/home') }}">ابدأ التسوق</a>
                 </div>
-            </nav>
+           </nav>
+
 
             <section class="hero">
                 <div class="hero-content">
-
                     <span class="hero-tag">تجربة شراء احترافية للمعدات الطبية</span>
                     <h1 class="hero-title">اكتشف أحدث <span>المعدات الطبية</span> والحلول الصحية للعيادات والمستشفيات.</h1>
                     <p class="hero-text">
                         نوفر أجهزة طبية معتمدة، مستلزمات عالية الجودة، وخدمات تجهيز متكاملة للقطاع الطبي. كل ذلك بتجربة
                         شراء ذكية، استشارات متخصصة، وتوصيل سريع ومضمون.
-
                     </p>
                     <div class="hero-actions">
                         <a class="cta-primary" href="{{ route('login') }}">سجّل الدخول الآن</a>
@@ -282,7 +306,6 @@
                     </div>
                     <div class="stats">
                         <div class="stat">
-
                             <strong>+850</strong>
                             جهاز ومستلزم
                         </div>
@@ -316,12 +339,44 @@
                         <div class="card-title">مستلزمات يومية</div>
                         <p class="card-text">
                             مستهلكات طبية، أدوات تعقيم، وملحقات عالية الاعتمادية لتشغيل يومي دون توقف.
-
                         </p>
                     </div>
                 </div>
             </section>
 
+            <section id="features" class="showcase">
+                <div class="showcase-item">
+                    <h4>اعتماد وجودة</h4>
+                    <p class="card-text">منتجات مطابقة للمعايير الطبية مع شهادات جودة موثوقة.</p>
+                </div>
+                <div class="showcase-item">
+                    <h4>توريد سريع</h4>
+                    <p class="card-text">شبكة توزيع مرنة لضمان وصول المعدات في الوقت المناسب.</p>
+                </div>
+                <div class="showcase-item">
+                    <h4>خدمة ما بعد البيع</h4>
+                    <p class="card-text">فريق صيانة وتدريب لضمان التشغيل السلس للمعدات.</p>
+                </div>
+            </section>
+
+            <section id="collections" class="showcase">
+                <div class="showcase-item">
+                    <h4>الأجهزة التشخيصية</h4>
+                    <p class="card-text">أجهزة أشعة، سونار، ومناظير بدقة عالية لتشخيص أسرع.</p>
+                </div>
+                <div class="showcase-item">
+                    <h4>معدات العناية المركزة</h4>
+                    <p class="card-text">أجهزة تنفس، مراقبة، ومحاليل جاهزة لأعلى مستويات الرعاية.</p>
+                </div>
+                <div class="showcase-item">
+                    <h4>مستلزمات طبية</h4>
+                    <p class="card-text">قفازات، كمامات، مستهلكات تعقيم، ومواد تشغيل يومية.</p>
+                </div>
+            </section>
+
+            <section id="contact" class="card">
+                <div class="card-title">تواصل معنا</div>
+                <p class="card-text">تحتاج استشارة لتجهيز مركزك الطبي؟ فريقنا جاهز لخدمتك.</p>
             <section id="features" class="showcase">
                 <div class="showcase-item">
 
@@ -368,9 +423,7 @@
             </section>
 
             <footer class="footer">
-
                 © 2024 متجر النخبة — سوق المعدات الطبية المعتمدة.
-
             </footer>
         </div>
     </body>

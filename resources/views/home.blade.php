@@ -10,7 +10,8 @@
             <div class="card-title">مرحبًا {{ auth()->user()->name }}</div>
             <p class="card-text">
 
-                هذه لوحة المشتري الخاصة بك. تابع طلبات المعدات الطبية، جهّز قوائمك المفضلة، وتواصل مع فريق الدعم الفني بسهولة.
+                هذه لوحة المشتري الشاملة لإدارة مشتريات المعدات الطبية بسهولة. تابع الطلبات، احفظ قوائم التوريد، وراجع الفواتير
+                وخدمات الصيانة في مكان واحد.
 
             </p>
         </div>
@@ -22,20 +23,42 @@
 
         <div class="dashboard-grid">
             <div class="dashboard-item">
-                <strong>طلباتي</strong>
-                <span class="card-text">مراجعة الطلبات الحالية وسجل المشتريات الطبية.</span>
+                <strong>الطلبات الحالية</strong>
+                <span class="card-text">متابعة حالة الطلبات، التتبع اللحظي، وإدارة الاستلام.</span>
             </div>
             <div class="dashboard-item">
-                <strong>قوائم التوريد</strong>
-                <span class="card-text">حفظ قوائم بالمستلزمات المتكررة للطلب السريع.</span>
+                <strong>المشتريات السابقة</strong>
+                <span class="card-text">سجل شامل بالمشتريات مع إمكانية إعادة الطلب بسرعة.</span>
             </div>
             <div class="dashboard-item">
-                <strong>الدعم الفني</strong>
-                <span class="card-text">تذاكر الصيانة والتركيب والتدريب على الأجهزة.</span>
+                <strong>القوائم الذكية</strong>
+                <span class="card-text">قوائم توريد مخصصة للعيادات والمراكز الطبية.</span>
+            </div>
+            <div class="dashboard-item">
+                <strong>العروض والتنبيهات</strong>
+                <span class="card-text">تنبيهات فورية على العروض والمخزون المتجدد.</span>
             </div>
             <div class="dashboard-item">
                 <strong>العناوين والشحن</strong>
-                <span class="card-text">إدارة عناوين التوصيل للعيادات والمراكز.</span>
+                <span class="card-text">إدارة عناوين التوصيل وجدولة الشحنات.</span>
+            </div>
+            <div class="dashboard-item">
+                <strong>الفواتير والمدفوعات</strong>
+                <span class="card-text">تحميل الفواتير، تتبع المدفوعات، وخيارات دفع مرنة.</span>
+            </div>
+            <div class="dashboard-item">
+                <strong>الضمان والصيانة</strong>
+                <span class="card-text">تذاكر صيانة، مواعيد زيارات فنية، وتغطية الضمان.</span>
+            </div>
+            <div class="dashboard-item">
+                <strong>الدعم الفني</strong>
+                <span class="card-text">تواصل مباشر مع الخبراء لتشغيل الأجهزة والتدريب.</span>
+            </div>
+            <div class="dashboard-item">
+                <strong>المفضلة</strong>
+                <span class="card-text">حفظ المعدات المهمة ومقارنتها قبل الشراء.</span>
+
+
             </div>
         </div>
 

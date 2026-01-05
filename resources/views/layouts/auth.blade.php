@@ -187,6 +187,7 @@
             }
 
 
+
             .dashboard-grid {
                 display: grid;
                 gap: 1.2rem;
@@ -201,6 +202,7 @@
                 display: grid;
                 gap: 0.4rem;
             }
+
 
         </style>
     </head>
