@@ -6,7 +6,9 @@
     <div class="card">
         <div>
             <div class="card-title">مرحبًا بعودتك</div>
+
             <p class="card-text">سجّل الدخول لإدارة طلباتك الطبية، متابعة الشحنات، والوصول إلى عروض الموردين.</p>
+
         </div>
 
         @if (session('status'))

@@ -85,7 +85,9 @@
                 display: grid;
                 gap: 1.4rem;
                 box-shadow: 0 15px 40px rgba(15, 23, 42, 0.4);
+
                 max-width: 620px;
+
                 margin: 0 auto;
                 width: 100%;
             }
@@ -184,6 +186,8 @@
                 font-weight: 600;
             }
 
+
+
             .dashboard-grid {
                 display: grid;
                 gap: 1.2rem;
@@ -198,6 +202,8 @@
                 display: grid;
                 gap: 0.4rem;
             }
+
+
         </style>
     </head>
     <body>
@@ -207,7 +213,9 @@
                     <div class="logo">ن</div>
                     <div>
                         متجر النخبة
+
                         <div style="color: var(--muted); font-size: 0.85rem;">سوق المعدات الطبية</div>
+
                     </div>
                 </a>
                 <div class="actions">

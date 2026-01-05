@@ -1,20 +1,25 @@
 @extends('layouts.auth')
 
+
 @section('title', 'لوحة المشتري | متجر النخبة')
+
 
 @section('content')
     <div class="card">
         <div>
             <div class="card-title">مرحبًا {{ auth()->user()->name }}</div>
             <p class="card-text">
+
                 هذه لوحة المشتري الشاملة لإدارة مشتريات المعدات الطبية بسهولة. تابع الطلبات، احفظ قوائم التوريد، وراجع الفواتير
                 وخدمات الصيانة في مكان واحد.
+
             </p>
         </div>
 
         @if (session('status'))
             <div class="success">{{ session('status') }}</div>
         @endif
+
 
         <div class="dashboard-grid">
             <div class="dashboard-item">
@@ -52,6 +57,8 @@
             <div class="dashboard-item">
                 <strong>المفضلة</strong>
                 <span class="card-text">حفظ المعدات المهمة ومقارنتها قبل الشراء.</span>
+
+
             </div>
         </div>
 
