@@ -43,17 +43,30 @@
             .page {
                 display: flex;
                 flex-direction: column;
-                gap: 4rem;
+                gap: 3rem;
                 padding: 2.5rem 1.5rem 4rem;
-                max-width: 1200px;
+                max-width: 1280px;
                 margin: 0 auto;
             }
 
-            .nav {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
+            .layout {
+                display: grid;
+                grid-template-columns: 1fr 260px;
+                gap: 2.5rem;
+                align-items: start;
+            }
+
+            .sidebar {
+                position: sticky;
+                top: 2rem;
+                display: grid;
                 gap: 1.5rem;
+                padding: 1.5rem;
+                border-radius: 24px;
+                background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(15, 23, 42, 0.9));
+                border: 1px solid rgba(148, 163, 184, 0.2);
+                backdrop-filter: blur(14px);
+                box-shadow: 0 20px 40px rgba(15, 23, 42, 0.45);
             }
 
             .brand {
@@ -76,23 +89,38 @@
                 box-shadow: 0 15px 30px rgba(34, 211, 238, 0.2);
             }
 
-            .nav-links {
-                display: flex;
-                align-items: center;
-                gap: 1rem;
+            .sidebar-links {
+                display: grid;
+                gap: 0.85rem;
                 color: var(--muted);
                 font-weight: 500;
             }
 
-            .nav-links a {
-                padding: 0.5rem 0.9rem;
-                border-radius: 999px;
+            .sidebar-links a {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0.75rem 1rem;
+                border-radius: 14px;
                 transition: all 0.2s ease;
+                background: rgba(15, 23, 42, 0.4);
+                border: 1px solid transparent;
             }
 
-            .nav-links a:hover {
-                background: var(--glass);
+            .sidebar-links a span {
+                font-size: 0.85rem;
+                color: rgba(226, 232, 240, 0.6);
+            }
+
+            .sidebar-links a:hover {
+                background: rgba(34, 211, 238, 0.15);
+                border-color: rgba(34, 211, 238, 0.3);
                 color: #fff;
+            }
+
+            .sidebar-cta {
+                display: grid;
+                gap: 0.75rem;
             }
 
             .cta-primary {
@@ -104,7 +132,7 @@
                 box-shadow: 0 15px 30px rgba(168, 85, 247, 0.25);
             }
 
-            .hero {
+            .content {
                 display: grid;
                 gap: 2.5rem;
             }
@@ -231,7 +259,7 @@
             }
 
             @media (min-width: 900px) {
-                .hero {
+                .content {
                     grid-template-columns: 1.1fr 0.9fr;
                     align-items: center;
                 }
@@ -240,85 +268,104 @@
                     grid-template-columns: 1fr;
                 }
             }
+
+            @media (max-width: 900px) {
+                .layout {
+                    grid-template-columns: 1fr;
+                }
+
+                .sidebar {
+                    position: static;
+                }
+
+                .sidebar-links {
+                    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+                }
+            }
         </style>
     </head>
     <body>
         <div class="page">
-            <nav class="nav">
-                <div class="brand">
-                    <div class="logo">ن</div>
-                    <div>
-                        متجر النخبة
-                        <div style="color: var(--muted); font-size: 0.85rem;">سوق المعدات الطبية</div>
+            <div class="layout">
+                <aside class="sidebar">
+                    <div class="brand">
+                        <div class="logo">ن</div>
+                        <div>
+                            متجر النخبة
+                            <div style="color: var(--muted); font-size: 0.85rem;">سوق المعدات الطبية</div>
+                        </div>
                     </div>
-                </div>
-                <div class="nav-links">
-                    <a href="#features">المزايا</a>
-                    <a href="#collections">التخصصات</a>
-                    <a href="#contact">تواصل معنا</a>
-                    <a class="cta-primary" href="{{ url('/home') }}">ابدأ التسوق</a>
-                </div>
-            </nav>
-
-            <section class="hero">
-                <div class="hero-content">
-                    <span class="hero-tag">تجربة شراء احترافية للمعدات الطبية</span>
-                    <h1 class="hero-title">اكتشف أحدث <span>المعدات الطبية</span> والحلول الصحية للعيادات والمستشفيات.</h1>
-                    <p class="hero-text">
-                        نوفر أجهزة طبية معتمدة، مستلزمات عالية الجودة، وخدمات تجهيز متكاملة للقطاع الطبي. كل ذلك بتجربة
-                        شراء ذكية، استشارات متخصصة، وتوصيل سريع ومضمون.
-                    </p>
-                    <div class="hero-actions">
+                    <div class="sidebar-links">
+                        <a href="#features">
+                            المزايا
+                            <span>جودة وخدمات</span>
+                        </a>
+                        <a href="#collections">
+                            التخصصات
+                            <span>حلول متنوعة</span>
+                        </a>
+                        <a href="#contact">
+                            تواصل معنا
+                            <span>نحن هنا</span>
+                        </a>
+                        <a href="{{ url('/home') }}">
+                            ابدأ التسوق
+                            <span>تصفح الآن</span>
+                        </a>
+                    </div>
+                    <div class="sidebar-cta">
                         <a class="cta-primary" href="{{ route('login') }}">سجّل الدخول الآن</a>
                         <a class="cta-secondary" href="{{ route('register') }}">إنشاء حساب جديد</a>
                     </div>
-                    <div class="stats">
-                        <div class="stat">
-                            <strong>+850</strong>
-                            جهاز ومستلزم
+                </aside>
+
+                <main>
+                    <section class="content">
+                        <div class="hero-content">
+                            <span class="hero-tag">تجربة شراء احترافية للمعدات الطبية</span>
+                            <h1 class="hero-title">اكتشف أحدث <span>المعدات الطبية</span> والحلول الصحية للعيادات والمستشفيات.</h1>
+                            <p class="hero-text">
+                                نوفر أجهزة طبية معتمدة، مستلزمات عالية الجودة، وخدمات تجهيز متكاملة للقطاع الطبي. كل ذلك بتجربة
+                                شراء ذكية، استشارات متخصصة، وتوصيل سريع ومضمون.
+                            </p>
+                            <div class="stats">
+                                <div class="stat">
+                                    <strong>+850</strong>
+                                    جهاز ومستلزم
+                                </div>
+                                <div class="stat">
+                                    <strong>24/7</strong>
+                                    دعم فني
+                                </div>
+                                <div class="stat">
+                                    <strong>100%</strong>
+                                    ضمان الجودة
+                                </div>
+                            </div>
                         </div>
-                        <div class="stat">
-                            <strong>24/7</strong>
-                            دعم فني
+                        <div class="hero-cards">
+                            <div class="card">
+                                <div class="card-title">حلول تجهيز العيادات</div>
+                                <p class="card-text">
+                                    باقات متكاملة تشمل الأجهزة التشخيصية، أجهزة قياس العلامات الحيوية، وكامل احتياجات العيادة.
+                                </p>
+                            </div>
+                            <div class="card">
+                                <div class="card-title">توريد للمستشفيات</div>
+                                <p class="card-text">
+                                    معدات معتمدة للأقسام الحرجة، غرف العمليات، ووحدات العناية مع خطط توريد مرنة.
+                                </p>
+                            </div>
+                            <div class="card">
+                                <div class="card-title">مستلزمات يومية</div>
+                                <p class="card-text">
+                                    مستهلكات طبية، أدوات تعقيم، وملحقات عالية الاعتمادية لتشغيل يومي دون توقف.
+                                </p>
+                            </div>
                         </div>
-                        <div class="stat">
-                            <strong>100%</strong>
-                            ضمان الجودة
-                        </div>
-                    </div>
-                </div>
-                <div class="nav-links">
-                    <a href="#features">المزايا</a>
-
-                    <a href="#collections">التخصصات</a>
-
-                    <a href="#contact">تواصل معنا</a>
-                    <a class="cta-primary" href="{{ url('/home') }}">ابدأ التسوق</a>
-                </div>
-           </nav>
-
-
-                <div class="hero-cards">
-                    <div class="card">
-                        <div class="card-title">حلول تجهيز العيادات</div>
-                        <p class="card-text">
-                            باقات متكاملة تشمل الأجهزة التشخيصية، أجهزة قياس العلامات الحيوية، وكامل احتياجات العيادة.
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="card-title">توريد للمستشفيات</div>
-                        <p class="card-text">
-                            معدات معتمدة للأقسام الحرجة، غرف العمليات، ووحدات العناية مع خطط توريد مرنة.
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="card-title">مستلزمات يومية</div>
-                        <p class="card-text">
-                            مستهلكات طبية، أدوات تعقيم، وملحقات عالية الاعتمادية لتشغيل يومي دون توقف.
-                        </p>
-                    </div>
-                </div>
-            </section>
+                    </section>
+                </main>
+            </div>
 
             <section id="features" class="showcase">
                 <div class="showcase-item">
