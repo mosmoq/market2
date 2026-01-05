@@ -85,7 +85,9 @@
                 display: grid;
                 gap: 1.4rem;
                 box-shadow: 0 15px 40px rgba(15, 23, 42, 0.4);
-                max-width: 520px;
+
+                max-width: 620px;
+
                 margin: 0 auto;
                 width: 100%;
             }
@@ -183,6 +185,23 @@
                 color: #fff;
                 font-weight: 600;
             }
+
+
+            .dashboard-grid {
+                display: grid;
+                gap: 1.2rem;
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            }
+
+            .dashboard-item {
+                padding: 1.2rem;
+                border-radius: 18px;
+                border: 1px solid rgba(148, 163, 184, 0.2);
+                background: rgba(15, 23, 42, 0.7);
+                display: grid;
+                gap: 0.4rem;
+            }
+
         </style>
     </head>
     <body>
@@ -192,7 +211,9 @@
                     <div class="logo">ن</div>
                     <div>
                         متجر النخبة
-                        <div style="color: var(--muted); font-size: 0.85rem;">سوق الكراسي والأسرّة والأدوات الصحية</div>
+
+                        <div style="color: var(--muted); font-size: 0.85rem;">سوق المعدات الطبية</div>
+
                     </div>
                 </a>
                 <div class="actions">

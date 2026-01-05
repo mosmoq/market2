@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>متجر النخبة | سوق الكراسي والأسرّة والأدوات الصحية</title>
+
+        <title>متجر النخبة | سوق المعدات الطبية</title>
+
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=alexandria:300,400,500,600,700,800&display=swap" rel="stylesheet" />
         <style>
@@ -249,12 +251,16 @@
                     <div class="logo">ن</div>
                     <div>
                         متجر النخبة
-                        <div style="color: var(--muted); font-size: 0.85rem;">سوق الكراسي والأسرّة والأدوات الصحية</div>
+
+                        <div style="color: var(--muted); font-size: 0.85rem;">سوق المعدات الطبية</div>
+
                     </div>
                 </div>
                 <div class="nav-links">
                     <a href="#features">المزايا</a>
-                    <a href="#collections">التشكيلات</a>
+
+                    <a href="#collections">التخصصات</a>
+
                     <a href="#contact">تواصل معنا</a>
                     <a class="cta-primary" href="{{ url('/home') }}">ابدأ التسوق</a>
                 </div>
@@ -262,11 +268,13 @@
 
             <section class="hero">
                 <div class="hero-content">
-                    <span class="hero-tag">تجربة تسوق فاخرة ومودرن</span>
-                    <h1 class="hero-title">اكتشف أرقى <span>الكراسي والأسرّة</span> وتجهيزات الحمام في منصة واحدة.</h1>
+
+                    <span class="hero-tag">تجربة شراء احترافية للمعدات الطبية</span>
+                    <h1 class="hero-title">اكتشف أحدث <span>المعدات الطبية</span> والحلول الصحية للعيادات والمستشفيات.</h1>
                     <p class="hero-text">
-                        نحن نقدم لك تصاميم مختارة بعناية، جودة عالية، وخيارات متعددة تناسب كل الأذواق. استمتع بتجربة شراء
-                        ذكية، مع استشارات تصميم وتوصيل سريع ومضمون إلى باب منزلك.
+                        نوفر أجهزة طبية معتمدة، مستلزمات عالية الجودة، وخدمات تجهيز متكاملة للقطاع الطبي. كل ذلك بتجربة
+                        شراء ذكية، استشارات متخصصة، وتوصيل سريع ومضمون.
+
                     </p>
                     <div class="hero-actions">
                         <a class="cta-primary" href="{{ route('login') }}">سجّل الدخول الآن</a>
@@ -274,37 +282,41 @@
                     </div>
                     <div class="stats">
                         <div class="stat">
-                            <strong>+1200</strong>
-                            قطعة مختارة
+
+                            <strong>+850</strong>
+                            جهاز ومستلزم
                         </div>
                         <div class="stat">
                             <strong>24/7</strong>
-                            دعم مخصص
+                            دعم فني
                         </div>
                         <div class="stat">
                             <strong>100%</strong>
-                            ضمان جودة
+                            ضمان الجودة
+
                         </div>
                     </div>
                 </div>
 
                 <div class="hero-cards">
                     <div class="card">
-                        <div class="card-title">ركن فاخر للغرف</div>
+
+                        <div class="card-title">حلول تجهيز العيادات</div>
                         <p class="card-text">
-                            تشكيلة أسرّة بطابع عصري، ألوان دافئة، وخامات تدوم لسنوات طويلة مع تفاصيل تعكس الفخامة.
+                            باقات متكاملة تشمل الأجهزة التشخيصية، أجهزة قياس العلامات الحيوية، وكامل احتياجات العيادة.
                         </p>
                     </div>
                     <div class="card">
-                        <div class="card-title">حمّام متكامل</div>
+                        <div class="card-title">توريد للمستشفيات</div>
                         <p class="card-text">
-                            أحواض ومغاسل وإكسسوارات صحية تمنحك لمسة سبا راقية مع تقنيات موفرة للمياه والطاقة.
+                            معدات معتمدة للأقسام الحرجة، غرف العمليات، ووحدات العناية مع خطط توريد مرنة.
                         </p>
                     </div>
                     <div class="card">
-                        <div class="card-title">جلسات مميزة</div>
+                        <div class="card-title">مستلزمات يومية</div>
                         <p class="card-text">
-                            كراسي أنيقة ومريحة تناسب صالونك أو مكتبك، بتشطيبات فنية وراحة محسّنة طوال اليوم.
+                            مستهلكات طبية، أدوات تعقيم، وملحقات عالية الاعتمادية لتشغيل يومي دون توقف.
+
                         </p>
                     </div>
                 </div>
@@ -312,37 +324,43 @@
 
             <section id="features" class="showcase">
                 <div class="showcase-item">
-                    <h4>تجربة ثلاثية الأبعاد</h4>
-                    <p class="card-text">شاهد منتجاتك في مساحة منزلك قبل الشراء عبر معاينة تفاعلية واقعية.</p>
+
+                    <h4>اعتماد وجودة</h4>
+                    <p class="card-text">منتجات مطابقة للمعايير الطبية مع شهادات جودة موثوقة.</p>
                 </div>
                 <div class="showcase-item">
-                    <h4>خيارات دفع مرنة</h4>
-                    <p class="card-text">خطط دفع متنوعة لتسهيل القرار مع حماية كاملة للعميل.</p>
+                    <h4>توريد سريع</h4>
+                    <p class="card-text">شبكة توزيع مرنة لضمان وصول المعدات في الوقت المناسب.</p>
                 </div>
                 <div class="showcase-item">
                     <h4>خدمة ما بعد البيع</h4>
-                    <p class="card-text">فريق محترف للتركيب والصيانة مع ضمان ممتد لراحتك.</p>
+                    <p class="card-text">فريق صيانة وتدريب لضمان التشغيل السلس للمعدات.</p>
+
                 </div>
             </section>
 
             <section id="collections" class="showcase">
                 <div class="showcase-item">
-                    <h4>مجموعة الكراسي المميزة</h4>
-                    <p class="card-text">تصميمات تجمع بين الراحة والفخامة لتضيف لمسة راقية لأي مساحة.</p>
+
+                    <h4>الأجهزة التشخيصية</h4>
+                    <p class="card-text">أجهزة أشعة، سونار، ومناظير بدقة عالية لتشخيص أسرع.</p>
                 </div>
                 <div class="showcase-item">
-                    <h4>مجموعة الأسرّة الملكية</h4>
-                    <p class="card-text">تفاصيل متقنة وأقمشة فاخرة تمنحك نومًا هادئًا ومظهرًا أنيقًا.</p>
+                    <h4>معدات العناية المركزة</h4>
+                    <p class="card-text">أجهزة تنفس، مراقبة، ومحاليل جاهزة لأعلى مستويات الرعاية.</p>
                 </div>
                 <div class="showcase-item">
-                    <h4>مجموعة الأدوات الصحية</h4>
-                    <p class="card-text">خامات مقاومة للرطوبة ومظهر عصري يرفع مستوى الحمام بالكامل.</p>
+                    <h4>مستلزمات طبية</h4>
+                    <p class="card-text">قفازات، كمامات، مستهلكات تعقيم، ومواد تشغيل يومية.</p>
+
                 </div>
             </section>
 
             <section id="contact" class="card">
                 <div class="card-title">تواصل معنا</div>
-                <p class="card-text">تحتاج مساعدة أو استشارة تصميم؟ فريقنا مستعد لإرشادك لاختيار الأنسب لمساحتك.</p>
+
+                <p class="card-text">تحتاج استشارة لتجهيز مركزك الطبي؟ فريقنا جاهز لخدمتك.</p>
+
                 <div class="hero-actions">
                     <a class="cta-primary" href="mailto:info@market.com">info@market.com</a>
                     <a class="cta-secondary" href="tel:+962700000000">+962 7 0000 0000</a>
@@ -350,7 +368,9 @@
             </section>
 
             <footer class="footer">
-                © 2024 متجر النخبة — تجربة تسوق فاخرة للكراسي والأسرّة والأدوات الصحية.
+
+                © 2024 متجر النخبة — سوق المعدات الطبية المعتمدة.
+
             </footer>
         </div>
     </body>

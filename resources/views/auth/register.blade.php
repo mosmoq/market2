@@ -5,8 +5,10 @@
 @section('content')
     <div class="card">
         <div>
-            <div class="card-title">انضم إلى متجر النخبة</div>
-            <p class="card-text">أنشئ حسابك بسهولة للوصول إلى عروض حصرية وتجربة تسوق مميزة.</p>
+
+            <div class="card-title">انضم إلى متجر النخبة الطبي</div>
+            <p class="card-text">أنشئ حسابك للوصول إلى أحدث المعدات الطبية، العروض، وخدمات ما بعد البيع.</p>
+
         </div>
 
         @if ($errors->any())
