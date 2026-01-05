@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\OrdersController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,4 +24,8 @@ Route::get('/register', [AuthController::class, 'showRegister'])->name('register
 Route::post('/register', [AuthController::class, 'register'])->name('register.submit');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-Route::get('/home', [AuthController::class, 'home'])->middleware('auth')->name('home');
+Route::middleware('auth')->group(function () {
+    Route::get('/home', [AuthController::class, 'home'])->name('home');
+    Route::get('/orders', [OrdersController::class, 'index'])->name('orders.index');
+    Route::get('/orders/{order}', [OrdersController::class, 'show'])->name('orders.show');
+});

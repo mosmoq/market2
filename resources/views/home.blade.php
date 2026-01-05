@@ -1,18 +1,14 @@
 @extends('layouts.auth')
 
-
 @section('title', 'لوحة المشتري | متجر النخبة')
-
 
 @section('content')
     <div class="card">
         <div>
             <div class="card-title">مرحبًا {{ auth()->user()->name }}</div>
             <p class="card-text">
-
                 هذه لوحة المشتري الشاملة لإدارة مشتريات المعدات الطبية بسهولة. تابع الطلبات، احفظ قوائم التوريد، وراجع الفواتير
                 وخدمات الصيانة في مكان واحد.
-
             </p>
         </div>
 
@@ -20,12 +16,11 @@
             <div class="success">{{ session('status') }}</div>
         @endif
 
-
         <div class="dashboard-grid">
-            <div class="dashboard-item">
+            <a class="dashboard-item" href="{{ route('orders.index') }}">
                 <strong>الطلبات الحالية</strong>
                 <span class="card-text">متابعة حالة الطلبات، التتبع اللحظي، وإدارة الاستلام.</span>
-            </div>
+            </a>
             <div class="dashboard-item">
                 <strong>المشتريات السابقة</strong>
                 <span class="card-text">سجل شامل بالمشتريات مع إمكانية إعادة الطلب بسرعة.</span>
@@ -57,8 +52,6 @@
             <div class="dashboard-item">
                 <strong>المفضلة</strong>
                 <span class="card-text">حفظ المعدات المهمة ومقارنتها قبل الشراء.</span>
-
-
             </div>
         </div>
 

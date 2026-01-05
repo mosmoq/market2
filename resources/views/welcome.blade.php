@@ -21,39 +21,11 @@
                 font-family: "Alexandria", system-ui, -apple-system, sans-serif;
             }
 
-
             * {
                 box-sizing: border-box;
                 margin: 0;
                 padding: 0;
             }
-
-
-        <title>متجر النخبة | سوق المعدات الطبية</title>
-
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=alexandria:300,400,500,600,700,800&display=swap" rel="stylesheet" />
-        <style>
-            :root {
-                --bg: #0b0f1a;
-                --surface: #111827;
-                --surface-2: #0f172a;
-                --accent: #22d3ee;
-                --accent-2: #a855f7;
-                --gold: #f59e0b;
-                --text: #f8fafc;
-                --muted: #cbd5f5;
-                --glass: rgba(255, 255, 255, 0.08);
-                --border: rgba(148, 163, 184, 0.3);
-                font-family: "Alexandria", system-ui, -apple-system, sans-serif;
-            }
-
-            * {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-            }
-
 
             body {
                 min-height: 100vh;
@@ -278,19 +250,15 @@
                     <div>
                         متجر النخبة
                         <div style="color: var(--muted); font-size: 0.85rem;">سوق المعدات الطبية</div>
-
                     </div>
                 </div>
                 <div class="nav-links">
                     <a href="#features">المزايا</a>
-
                     <a href="#collections">التخصصات</a>
-
                     <a href="#contact">تواصل معنا</a>
                     <a class="cta-primary" href="{{ url('/home') }}">ابدأ التسوق</a>
                 </div>
-           </nav>
-
+            </nav>
 
             <section class="hero">
                 <div class="hero-content">
@@ -316,14 +284,22 @@
                         <div class="stat">
                             <strong>100%</strong>
                             ضمان الجودة
-
                         </div>
                     </div>
                 </div>
+                <div class="nav-links">
+                    <a href="#features">المزايا</a>
+
+                    <a href="#collections">التخصصات</a>
+
+                    <a href="#contact">تواصل معنا</a>
+                    <a class="cta-primary" href="{{ url('/home') }}">ابدأ التسوق</a>
+                </div>
+           </nav>
+
 
                 <div class="hero-cards">
                     <div class="card">
-
                         <div class="card-title">حلول تجهيز العيادات</div>
                         <p class="card-text">
                             باقات متكاملة تشمل الأجهزة التشخيصية، أجهزة قياس العلامات الحيوية، وكامل احتياجات العيادة.
@@ -377,45 +353,6 @@
             <section id="contact" class="card">
                 <div class="card-title">تواصل معنا</div>
                 <p class="card-text">تحتاج استشارة لتجهيز مركزك الطبي؟ فريقنا جاهز لخدمتك.</p>
-            <section id="features" class="showcase">
-                <div class="showcase-item">
-
-                    <h4>اعتماد وجودة</h4>
-                    <p class="card-text">منتجات مطابقة للمعايير الطبية مع شهادات جودة موثوقة.</p>
-                </div>
-                <div class="showcase-item">
-                    <h4>توريد سريع</h4>
-                    <p class="card-text">شبكة توزيع مرنة لضمان وصول المعدات في الوقت المناسب.</p>
-                </div>
-                <div class="showcase-item">
-                    <h4>خدمة ما بعد البيع</h4>
-                    <p class="card-text">فريق صيانة وتدريب لضمان التشغيل السلس للمعدات.</p>
-
-                </div>
-            </section>
-
-            <section id="collections" class="showcase">
-                <div class="showcase-item">
-
-                    <h4>الأجهزة التشخيصية</h4>
-                    <p class="card-text">أجهزة أشعة، سونار، ومناظير بدقة عالية لتشخيص أسرع.</p>
-                </div>
-                <div class="showcase-item">
-                    <h4>معدات العناية المركزة</h4>
-                    <p class="card-text">أجهزة تنفس، مراقبة، ومحاليل جاهزة لأعلى مستويات الرعاية.</p>
-                </div>
-                <div class="showcase-item">
-                    <h4>مستلزمات طبية</h4>
-                    <p class="card-text">قفازات، كمامات، مستهلكات تعقيم، ومواد تشغيل يومية.</p>
-
-                </div>
-            </section>
-
-            <section id="contact" class="card">
-                <div class="card-title">تواصل معنا</div>
-
-                <p class="card-text">تحتاج استشارة لتجهيز مركزك الطبي؟ فريقنا جاهز لخدمتك.</p>
-
                 <div class="hero-actions">
                     <a class="cta-primary" href="mailto:info@market.com">info@market.com</a>
                     <a class="cta-secondary" href="tel:+962700000000">+962 7 0000 0000</a>

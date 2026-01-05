@@ -85,9 +85,7 @@
                 display: grid;
                 gap: 1.4rem;
                 box-shadow: 0 15px 40px rgba(15, 23, 42, 0.4);
-
                 max-width: 620px;
-
                 margin: 0 auto;
                 width: 100%;
             }
@@ -186,8 +184,6 @@
                 font-weight: 600;
             }
 
-
-
             .dashboard-grid {
                 display: grid;
                 gap: 1.2rem;
@@ -201,9 +197,13 @@
                 background: rgba(15, 23, 42, 0.7);
                 display: grid;
                 gap: 0.4rem;
+                transition: transform 0.2s ease, border-color 0.2s ease;
             }
 
-
+            .dashboard-item:hover {
+                transform: translateY(-4px);
+                border-color: rgba(34, 211, 238, 0.6);
+            }
         </style>
     </head>
     <body>
@@ -213,9 +213,7 @@
                     <div class="logo">ن</div>
                     <div>
                         متجر النخبة
-
                         <div style="color: var(--muted); font-size: 0.85rem;">سوق المعدات الطبية</div>
-
                     </div>
                 </a>
                 <div class="actions">
